@@ -23,18 +23,9 @@ body {
 	position: relative; 
 	margin-top: 20px;
 	top:0%; 
-	left: 5%;
-}
-
-#buttons{
-	position: relative;
-	width: 200px;
-	left: 35%;
-	top: 0%;
-}
-
-#button1,#button2{
-	margin-top: 20px;
+	left: 0%;
+	width: 90%;
+	height: 90%;
 }
 
 #imageCanvas{
@@ -44,7 +35,21 @@ body {
 
 }
 
+#buttons{
+	width: 100%;
+	height: 20px;
+}
+
+#imageLoader{
+	position: relative;
+	left: 0%;
+	top: 5%;
+	cursor: pointer;
+}
+
 #download{
+	position: relative;
+	top: 5%;
 	cursor: pointer;
 	text-decoration: underline;
 }

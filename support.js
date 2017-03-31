@@ -4,13 +4,11 @@
 	var imageLoader = document.getElementById('imageLoader');
     imageLoader.addEventListener('change', uploadImage, false);						//calling function onclick
 	
-
-
-	window.onload = function(){														//this function automatically draws background image
-		var img = new Image();															
-		img.src = "imgx1.png";
+	var img = new Image();	
+	img.onload = function(){														
 		ctx2.drawImage(img, 0,0,img.width, img.height,0,0,canvas2.width,canvas2.height);
 	}
+	img.src = "imgx1.png";
 
 	function uploadImage(e){														//this function used to upload image
 		var canvas1 = document.getElementById('imageCanvas');
