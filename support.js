@@ -2,16 +2,14 @@
 	var ctx2 = canvas2.getContext("2d");											//creating  canvas objects to draw image on canvas
 
 	var imageLoader = document.getElementById('imageLoader');
-    imageLoader.addEventListener('change', uploadImage, false);						//calling function onclick
-	
+    	imageLoader.addEventListener('change', uploadImage, false);						//calling function onclick
 
+	var img = new Image();															
 
-	window.onload = function(){														//this function automatically draws background image
-		var img = new Image();															
-		img.src = "imgx1.png";
-		img.alt = "background Image";
+	img.onload = function(){														//this function automatically draws background image				
 		ctx2.drawImage(img, 0,0,img.width, img.height,0,0,canvas2.width,canvas2.height);
 	}
+	img.src = "imgx1.png";
 
 	function uploadImage(e){														//this function used to upload image
 		var canvas1 = document.getElementById('imageCanvas');
