@@ -9,6 +9,7 @@
 	window.onload = function(){														//this function automatically draws background image
 		var img = new Image();															
 		img.src = "imgx1.png";
+		img.alt = "background Image";
 		ctx2.drawImage(img, 0,0,img.width, img.height,0,0,canvas2.width,canvas2.height);
 	}
 
